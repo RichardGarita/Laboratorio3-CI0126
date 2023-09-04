@@ -11,7 +11,7 @@ namespace Laboratorio3.Controllers
         {
             var song = GetSong();
             ViewBag.MainTitle = "My Favourite Song";
-            return View();
+            return View(song);
         }
 
         private SongModel GetSong()

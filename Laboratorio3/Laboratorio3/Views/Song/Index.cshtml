@@ -1,0 +1,40 @@
+﻿@model Laboratorio3.Models.SongModel
+
+
+@{
+    ViewData["Title"] = "Song";
+}
+
+<h1>@ViewBag.MainTitle</h1>
+
+<div>
+    <table class="table">
+        <tr>
+            <th>Song Title</th>
+            <td>@Model.Name</td>
+        </tr>
+
+        <tr>
+            <th>Author</th>
+            <td>@Model.Author</td>
+        </tr>
+
+        <tr>
+            <th>Gender</th>
+            <td>@Model.Genre</td>
+        </tr>
+
+        <tr>
+            <th>Album</th>
+            <td>@Model.Album</td>
+        </tr>
+
+        <tr>
+            <th>Released Date</th>
+            <td>@Model.ReleasedDate</td>
+        </tr>
+    </table>
+</div>
+<div>
+    <button>I am a button</button>
+</div>
